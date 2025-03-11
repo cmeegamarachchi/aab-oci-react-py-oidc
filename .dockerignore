@@ -1,0 +1,54 @@
+# General ignores
+.git
+.gitignore
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# Node.js / React (frontend) ignores
+frontend/node_modules
+frontend/dist
+frontend/.parcel-cache
+frontend/.next
+frontend/build
+frontend/npm-debug.log
+frontend/yarn-debug.log
+frontend/yarn-error.log
+frontend/.env
+frontend/.env.local
+frontend/.eslintcache
+
+# Python / FastAPI (backend) ignores
+api/__pycache__/
+api/.venv/
+api/env/
+api/venv/
+api/.mypy_cache/
+api/.pytest_cache/
+api/.coverage
+api/.pylintrc
+api/*.pyc
+api/*.pyo
+api/.env
+api/.env.local
+api/.DS_Store
+api/db.sqlite3
+
+# Ignore Python artifacts from all submodules in api/
+api/**/__pycache__/
+api/**/.mypy_cache/
+api/**/.pytest_cache/
+api/**/.tox/
+api/**/.coverage
+api/**/env/
+api/**/venv/
+api/**/.venv/
+api/**/dist/
+api/**/build/
+api/**/egg-info/
+api/**/*.pyc
+api/**/*.pyo
+

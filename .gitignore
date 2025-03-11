@@ -1,0 +1,88 @@
+# General ignores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# Node.js / React (frontend) ignores
+frontend/node_modules/
+frontend/dist/
+frontend/.parcel-cache/
+frontend/.next/
+frontend/build/
+frontend/npm-debug.log
+frontend/yarn-debug.log
+frontend/yarn-error.log
+frontend/.eslintcache
+frontend/.env
+frontend/.env.local
+frontend/.turbo/
+
+# Python / FastAPI (backend) ignores
+api/__pycache__/
+api/.venv/
+api/env/
+api/venv/
+api/.mypy_cache/
+api/.pytest_cache/
+api/.tox/
+api/.coverage
+api/.pylintrc
+api/*.pyc
+api/*.pyo
+api/.env
+api/.env.local
+api/.DS_Store
+api/db.sqlite3
+
+# Ignore Python artifacts from all submodules in api/
+api/**/__pycache__/
+api/**/.mypy_cache/
+api/**/.pytest_cache/
+api/**/.tox/
+api/**/.coverage
+api/**/env/
+api/**/venv/
+api/**/.venv/
+api/**/dist/
+api/**/build/
+api/**/egg-info/
+api/**/*.pyc
+api/**/*.pyo
+
+# Docker-related ignores
+deployment/docker-compose.override.yml
+deployment/.env
+deployment/.dockerignore
+deployment/tmp/
+deployment/cache/
+deployment/.pytest_cache/
+deployment/.coverage
+
+# Logs & runtime files
+*.log
+*.out
+*.pid
+*.lock
+*.sock
+
+# Ignore virtual environments (if using venv)
+venv/
+.env/
+.venv/
+env/
+
+# Ignore Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore local test databases (e.g., SQLite)
+db.sqlite3
+*.sqlite3
+
+.env
+.env.local

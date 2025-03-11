@@ -1,0 +1,41 @@
+{
+  "name": "appsolve application blocks react ui python api oidc starter kit",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/common-utils:2": {}    
+  },
+  "forwardPorts": [8000, 5179],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "prettier.printWidth": 120,
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[python]": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "ms-python.black-formatter"
+        },
+        "[typescript]":{
+           "editor.defaultFormatter":"esbenp.prettier-vscode"
+         },
+         "[javascript]":{
+            "editor.defaultFormatter":"esbenp.prettier-vscode"
+         }, 
+      "workbench.iconTheme": "material-icon-theme"
+      },
+      "extensions": [
+        "PKief.material-icon-theme",
+        "ms-vscode-remote.remote-containers",
+        "GitHub.copilot", // GitHub Copilot
+        "ms-azuretools.vscode-docker", // Docker
+        "humao.rest-client",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter"
+      ]
+    }
+  }
+}
