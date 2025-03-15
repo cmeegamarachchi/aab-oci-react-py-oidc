@@ -1,7 +1,7 @@
 import { BreadCrumbItem } from "@/components/SideNav/model";
 
 import Layout from "./../Layout";
-import ContactsDataGrid from "./ContactList";
+import ContactsDataGrid from "./ContactsDataGrid";
 import useContactsGet from "./useContactsGet";
 
 const breadCrumbs: BreadCrumbItem[] = [
